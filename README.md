@@ -1,12 +1,12 @@
 # LankaCraft Website - README
 
 ## Project Overview
-LankaCraft is an e-commerce platform designed for Kasun Jayasekara’s business. The website enables users to explore home decor products, book workshops, and make online purchases. The website is mobile-responsive, user-friendly, and built with robust technologies to ensure optimal performance and scalability.
+LankaCraft is an e-commerce platform designed for Kasun Jayasekara’s business. The website enables users to explore products, book workshops, and make online purchases. The website is mobile-responsive, user-friendly, and built with robust technologies to ensure optimal performance and scalability.
 
 ---
 
 ## Features
-1. **Home Decor Product Listings**
+1. **Product Listings**
    - Detailed product descriptions with images and pricing.
    - Categories for easy navigation.
 
