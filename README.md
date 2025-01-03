@@ -42,43 +42,19 @@ LankaCraft is an e-commerce platform designed for Kasun Jayasekara’s business.
 ---
 
 ## Installation Instructions
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/username/LankaCraft.git
-   ```
 
-2. **Set Up Database**:
+1. **Set Up Database**:
    - Import the `lankacraft.sql` file into your MySQL server.
-   - Update the database credentials in `db_config.php`.
+   - Database name -> database_lankacraft
 
-3. **Configure the Environment**:
-   - Ensure the `uploaded_img` directory is writable for storing product images.
-
-4. **Start the Server**:
-   - Use a local server like XAMPP or WAMP.
+2. **Start the Server**:
+   - Use a local server like XAMPP.
    - Place the project files in the `htdocs` directory.
 
-5. **Access the Website**:
+3. **Access the Website**:
    - Navigate to `http://localhost/LankaCraft` in your browser.
 
----
 
-
-### Key Folders
-- **handler/**: Back-end scripts for processing requests.
-- **assets/**: Static files (CSS, JavaScript, and images).
-- **Common/**: Shared assets and components.
-
----
-
-## Usage Instructions
-1. **User Functions**:
-   - Browse products, add to the cart, and proceed to checkout.
-   - Book workshops via the booking page.
-
-2. **Admin Functions**:
-   - Manage product listings through the admin panel.
-   - Update workshop schedules and monitor orders.
 
 
 
