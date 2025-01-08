@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h2,
+h3,
+a {
+    color: #34495e;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Navbar Styling */
+.navbar {
+    background-color: #E3F2FD; /* Light blue background */
+}
+
+.navbar .nav-link {
+    color: #1C325B !important; /* Dark blue text color */
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .nav-link:hover {
+    color: #0A1F44 !important; /* Darker shade on hover */
+}
+
+.navbar .navbar-brand img {
+    max-height: 50px;
+}
+
+/* Logout button */
+.login-btn {
+    background-color: gray ;
+    color: white !important;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background-color: #4d4d4d !important; /* Slightly darker gray on hover */
+}
+
+.dropdown-menu {
+    background-color: #E3F2FD;
+}
+
+.dropdown-item {
+    color: #1C325B;
+}
+
+.dropdown-item:hover {
+    background-color: #CCE4F7;
+}
+
+/* Sticky Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+/* Ensure right alignment of the navbar items and logout button */
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end; /* Right-align all items */
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px; /* Space between items */
+}
+
+
+
+
+/* Home page Slideshow */
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+/* Home page Discover products and workshop show */
+
+/* Main Content Section */
+
+.main-content {
+    padding: 40px 20px;
+}
+
+/* Headings */
+.main-content h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Featured Products Section */
+.featured-products .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.featured-products .product {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-products .product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.featured-products .product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.featured-products .product p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 10px 0 20px;
+}
+
+.featured-products .product .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.featured-products .product .btn:hover {
+    background-color: #2c81ba;
+}
+
+/* Workshops Section */
+.workshops {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.workshops h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+}
+
+.workshops p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.workshops .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.workshops .btn:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .featured-products .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-products .product {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+/* Footer section */
+      
+
+/* Footer Logo Section */
+.footer-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Navigation Links Section */
+.footer-nav h3, .footer-categories h3, .footer-contact h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333; 
+    color: #fff;
+}
+
+.footer-content div {
+    flex: 1; /* Allows sections to align properly */
+    margin: 10px; /* Adds spacing between sections */
+    min-width: 200px; /* Prevents sections from getting too narrow */
+}
+
+.footer-logo {
+    text-align: left;
+}
+
+.footer-nav, .footer-categories, .footer-contact {
+    text-align: left; /* Aligns all text and links to the left */
+}
+
+.footer-nav ul,
+.footer-categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li,
+.footer-categories ul li {
+    margin: 5px 0;
+}
+
+.footer-nav ul li a,
+.footer-categories ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-nav ul li a:hover,
+.footer-categories ul li a:hover {
+    text-decoration: underline; /* Adds hover effect */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #222; 
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stacks sections vertically */
+        align-items: flex-start; /* Ensures left alignment */
+    }
+
+    .footer-content div {
+        width: 100%; /* Full width for each section */
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .footer-bottom {
+        font-size: 0.8em; /* Adjust text size */
+        padding: 8px; /* Smaller padding */
+    }
+}
+
+/* Gallery page */
+.gallery-section {
+padding: 50px 0;
+background-color: #fff;
+}
+
+.container {
+width: 90%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/* Gallery Heading */
+.gallery-heading {
+text-align: center;
+font-size: 2.5rem;
+color: #333;
+margin-bottom: 30px;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+gap: 20px;
+}
+
+/* Gallery Card */
+.gallery-card {
+background-color: #fff;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-card img {
+width: 100%;
+height: auto;
+display: block;
+border-radius: 8px;
+transition: transform 0.3s ease;
+}
+
+.gallery-card img:hover {
+transform: scale(1.05);
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+.gallery-heading {
+font-size: 2rem;
+}
+
+.gallery-grid {
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+}
+
+
+
+/* Product page */
+.cart-btn {
+    
+    font-size: 1rem;
+    color: #fff;
+    background-color: #2ca328;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-btn:hover {
+    background-color: #ffca2c;
+}
+

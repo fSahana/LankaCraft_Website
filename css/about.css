@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h2,
+h3,
+a {
+    color: #34495e;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Navbar Styling */
+.navbar {
+    background-color: #E3F2FD; /* Light blue background */
+}
+
+.navbar .nav-link {
+    color: #1C325B !important; /* Dark blue text color */
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .nav-link:hover {
+    color: #0A1F44 !important; /* Darker shade on hover */
+}
+
+.navbar .navbar-brand img {
+    max-height: 50px;
+}
+
+/* Logout button */
+.login-btn {
+    background-color: gray ;
+    color: white !important;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background-color: #4d4d4d !important; /* Slightly darker gray on hover */
+}
+
+.dropdown-menu {
+    background-color: #E3F2FD;
+}
+
+.dropdown-item {
+    color: #1C325B;
+}
+
+.dropdown-item:hover {
+    background-color: #CCE4F7;
+}
+
+/* Sticky Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+/* Ensure right alignment of the navbar items and logout button */
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end; /* Right-align all items */
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px; /* Space between items */
+}
+
+
+
+
+/* Footer section */
+      
+
+/* Footer Logo Section */
+.footer-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Navigation Links Section */
+.footer-nav h3, .footer-categories h3, .footer-contact h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333; 
+    color: #fff;
+}
+
+.footer-content div {
+    flex: 1; /* Allows sections to align properly */
+    margin: 10px; /* Adds spacing between sections */
+    min-width: 200px; /* Prevents sections from getting too narrow */
+}
+
+.footer-logo {
+    text-align: left;
+}
+
+.footer-nav, .footer-categories, .footer-contact {
+    text-align: left; /* Aligns all text and links to the left */
+}
+
+.footer-nav ul,
+.footer-categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li,
+.footer-categories ul li {
+    margin: 5px 0;
+}
+
+.footer-nav ul li a,
+.footer-categories ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-nav ul li a:hover,
+.footer-categories ul li a:hover {
+    text-decoration: underline; /* Adds hover effect */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #222; 
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stacks sections vertically */
+        align-items: flex-start; /* Ensures left alignment */
+    }
+
+    .footer-content div {
+        width: 100%; /* Full width for each section */
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .footer-bottom {
+        font-size: 0.8em; /* Adjust text size */
+        padding: 8px; /* Smaller padding */
+    }
+}
+
+
+/* About Us page */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    outline: none;
+    color: #00aeef;
+    transition: color 0.2s ease-in-out;
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.sec-title {
+    position: relative;
+    z-index: 1;
+}
+
+.sec-title .title {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    color: #00aeef;
+    font-weight: 500;
+}
+
+.sec-title h2 {
+    display: block;
+    font-size: 40px;
+    line-height: 1.28em;
+    color: #222222;
+    font-weight: 600;
+}
+
+.sec-title .text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #848484;
+    font-weight: 400;
+}
+
+.about-section {
+    padding: 50px 0 70px;
+}
+
+.about-section .content-column {
+    margin-bottom: 10px;
+}
+
+.about-section .content-column .inner-column {
+    padding-left: 30px;
+}
+
+.about-section .text {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #848484;
+    font-weight: 400;
+}
+
+.about-section .btn-box {
+    position: relative;
+}
+
+.about-section .btn-box a {
+    padding: 15px 50px;
+    background-color: #00aeef;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.about-section .btn-box a:hover {
+    background-color: #0794c9;
+}
+
+.about-section .image-column {
+    position: relative;
+}
+
+.about-section .image-column .author-desc {
+    position: absolute;
+    bottom: 10px;
+    z-index: 1;
+    background: rgb(40, 160, 60);
+    padding: 10px 15px;
+    left: 96px;
+    width: calc(100% - 152px);
+    border-radius: 50px;
+}
+
+.about-section .image-column .author-desc h2 {
+    font-size: 21px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.about-section .image-column .author-desc span {
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+
+.about-section .image-column .image-1 {
+    position: relative;
+    
+}
+
+.about-section .image-column .image-1 img {
+    box-shadow: 0 30px 50px rgba(8,13,62,.15);
+    border-radius: 46px;
+}
